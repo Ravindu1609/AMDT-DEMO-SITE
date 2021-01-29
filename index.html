@@ -8,28 +8,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/boostrap/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#human_navbar").load("/html/partials/navbar.html")
+                $("#human_footer").load("/html/partials/footer.html")
+            
+            });
+        </script>
     </head>
     <body>
         <header>
-            
-            <nav>
-                <h1>The Human Project</h1>   
-             <ul>
-                <li>Fetures</li>
-                <li>Pricing</li>
-                <li>Our Story</li>
-                <li>Contact Us</li>
-             </ul>   
-            
-
-            </nav>
+            <div id="human_navbar"></div>
+           
         </header>
         <main class="text-center human-main-box">
             <div class="container"></div>
             <div class="row"></div>
-            <h1>Making You Human...</h1>
-            <p>Today, We are More Robot Than Human. Try Out The Human Project & Learn Over From Square.!</p>
-            <button>Learn More.</button>
+            <h1 class="display-3">Making You Human...</h1>
+            <p class="lead">Today, We are More Robot Than Human. Try Out The Human Project & Learn Over From Square.!</p>
+            <button button type="button" class="btn btn-outline-dark btn-lg ">Learn More.</button>
         </main>
         <footer>
             <p>CopyRights | The Human Project</p>
