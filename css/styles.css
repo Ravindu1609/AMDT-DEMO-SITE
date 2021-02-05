@@ -1,0 +1,29 @@
+
+/* Navbar styles */
+
+.human-navbar-right {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  .human-footer-box {
+    color:white;
+    padding: 10px;
+  }
+  
+  .human-main-box {
+    margin: 235px
+  }
+  
+  .human-features-main {
+    margin: 50px
+  }
+  
+  #human-features-form {
+    width: 425px;
+    margin-top: 85px;
+  }
+
+  .display-5{
+      margin-top:25px ;
+  }
