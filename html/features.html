@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../../css/boostrap/bootstrap.css">
         <link rel="stylesheet" href="../../css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../java/script.js"></script>
         <script>
             $(document).ready(function () {
                 $("#human-navbar").load("partials/navbar.html");
@@ -16,6 +17,7 @@
             
             });
         </script>
+       
     </head>
     <body>
         <header>
@@ -32,23 +34,26 @@
                   <div class="col">
                       <br/>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="jerry">
                       </div>
                       <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
+                      <button type="button" class="btn btn-secondary" onclick="pushname();">Submit</button>
                   </div>
                   <div class="col">
 
                     <br/>
+                    <br/>
                     
-                    <div class="card" style="width: 18rem;">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
+                    <div class="card"  style="width: 18rem;">
+                      
+                          <ul class="list-group list-group-flush"></li>
+                          <li class="list-group-item" id='exname'></li>
+                          <li class="list-group-item"></li>
+                          <li class="list-group-item"></li>
                         </ul>
                       </div>
                   </div>
